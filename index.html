@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Company</title>
+</head>
+<style>
+    *{
+     
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar{
+        margin: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;    
+        box-shadow: 0 0 50px rgb(0, 0, 0);
+    }
+    .logo img{
+        height: 50px;
+     
+        
+    }
+    .nav-menu{
+        display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        list-style-type: none;
+    }
+    .nav-menu li{
+      margin-left: 30px;
+      flex-wrap: wrap;
+        }
+        .nav-menu a{
+            font-size: 25px;
+            font-family: cursive;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            /* font-style: bold; */
+        }
+        .nav-menu a:hover{
+            color: orangered;
+           
+        }
+    
+        main{
+           position: relative;
+           height:700px;
+           overflow: hidden;
+        }
+       
+        .hero-image img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-content{
+            padding-top:20%;
+            color: #ffffff;
+          /* background-color: blueviolet; */
+          height: 600px;
+          /* display: flex; */
+          justify-content: center;
+          /* align-items: center; */
+          text-align: center;
+          /* flex-wrap: wrap; */
+            }
+            .hero-content h1{ 
+                text-shadow: 1px 3px rgb(0, 0, 0); 
+                font-size:60px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .hero-content h5{
+                text-shadow: 1px 2px rgb(0, 0, 0); 
+                font-size:30px;
+                font-family:'Times New Roman', Times, serif
+            }
+            .hero-content a{
+                background-color:rgb(240, 73, 7);
+                border-radius: 23px;
+                font-size:20px;
+                text-decoration: none;
+                color: #ffffff;
+                display: inline-block;
+                padding: 10px 20px;
+                transition: all ease-in-out 0.5s;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .hero-content a:hover{
+                color: rgb(255, 255, 255);
+                background-color:black;
+                font-size: 25px;
+                /* transition: all ease-in-out 0.5s; */
+            }
+            .footer-content{
+                padding: 23px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .footer-content p{
+                font-size:23px;
+                text-align: center;
+            }
+
+            .destinations{
+    font-size: 40px;
+    font-family: cursive;
+    margin: 40px 40px;
+    text-align: center;
+    
+ }
+ .destinations h2{
+  /* color: brown; */
+  
+    margin-bottom: 20px;
+    font-size: 45px;
+    /* font-family: fantasy; */
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+}
+.destination-item img{
+    width: 100%;
+    border-color: dimgray;
+    height: 400px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+}
+.destination-item h3{
+    margin-bottom: 10px;
+    font-size: 25px ;
+    /* font-family: fantasy; */
+}
+.destination-item p{
+    font-size: 18px;
+    line-height: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+ text-align: center;
+}
+.btn{
+    
+        padding: 10px 20px;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        background-color: black;
+        font-size:20px; 
+        transition: all 0.5s ease-in-out;
+        text-decoration: none;
+        display: inline-block;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(240, 73, 7);
+    font-size:25px;
+    text-shadow: 0 0 2px;
+}
+@media only screen and (max-width: 755px) {
+  
+  .destination-item img{
+    width: 225px;
+    height: 300px;
+  }
+  .destination-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:40px;
+  }
+}
+@media only screen and (max-width:555px){
+  .destination-item img{
+    width: 300px;
+    height: 400px;
+  }
+  .destination-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+</style>     
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="logo.jpg" alt="logo"></div>
+        <ul class="nav-menu">
+           <li><a href="#">Home</a></li>  
+           <li><a href="#destination" >Destination</a></li> 
+           <li><a href="hotels.html" target="blank">Hotel</a></li> 
+           <li><a href="activity.html" target="blank">Activity</a></li> 
+           <li><a href="about.html" target="blank">About</a></li> 
+           <li><a href="contact.html" target="blank">Contact</a></li> 
+        </ul>
+  </nav>  
+  <main>
+    <div class="hero-image">
+        <img src="hero.jpg" alt="Hero-image">
+        </div>
+        <div class="hero-content">
+        <h1>Welcome To Our Travel Website</h1><br><br>
+        <h5>Discover amazing destinations and book your next trip with us. </h5><br><br>
+        <a href="#" class="btn">Book Now</a>
+    </div>
+</main>
+
+  <!-- Destinations -->
+  <section id="destinations" class="destinations">
+    <pre id="destination"></pre>
+      <h2>Popular Destinations</h2>
+      <div class="destination-grid">
+        <div class="destination-item">
+          <img src="destination-1.jpg" alt="" />
+          <h3>New York City</h3>
+          <p>
+            Visit the city that never sleeps and discover its iconic
+            landmarks, world-class museums, and diverse neighborhoods.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="destination-2.jpg" alt="" />
+          <h3>Paris</h3>
+          <p>
+            Experience the romance and culture of the City of Lights, from the
+            Eiffel Tower to the Louvre Museum.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="destination-3.jpg" alt="" />
+          <h3>Tokyo</h3>
+          <p>
+            Explore the vibrant city of Tokyo and immerse yourself in its
+            unique blend of ancient traditions and modern technology.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="destination-4.jpg" alt="" />
+          <h3>Canada</h3>
+          <p>
+            Canada is the second-largest country in the world by land area, located in North America. It is known for its diverse landscapes, ranging from vast forests.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="destination-5.jpg" alt="" />
+          <h3>France</h3>
+          <p>
+            France, officially known as the French Republic, is a country located in Western Europe. It is known for its rich history, cultural heritage, and significant contributions to art.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="destination-6.jpg" alt="" />
+          <h3>Thailand</h3>
+          <p>
+            Thailand is a country located in Southeast Asia, known for its rich cultural heritage, stunning landscapes, and vibrant cities. It is famous for its beautiful beaches.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-content">
+     <p>&copy;2024 Travel Company. All rights reserved.</p>   
+    </div>
+
+</body>
+</html>

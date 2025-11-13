@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+</head>
+<style>
+ *{
+        background-color:rgb(233, 238, 253);
+    }
+   .destinations{
+    font-size: 40px;
+    font-family: cursive;
+    margin: 40px 40px;
+    text-align: center;
+ }
+ .destinations h2{
+  /* color: rgb(27, 27, 71); */
+    margin-bottom: 20px;
+    font-size: 45px;
+    /* font-family: fantasy; */
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.destination-item h3{
+ 
+    margin-bottom: 10px;
+    font-size: 25px ;
+    /* font-family: fantasy; */
+}
+.destination-item p{
+    font-size: 18px;
+    line-height: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+ text-align: center;
+ }
+.btn{
+  
+      padding: 10px 20px;
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+      background-color: black;
+      font-size:20px; 
+      transition: all 0.5s ease-in-out;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.btn:hover{
+  color: rgb(255, 255, 255);
+  background-color:rgb(240, 73, 7);
+  font-size:25px;
+  text-shadow: 0 0 2px;
+}
+@media only screen and (max-width:755px){
+  .destination-item img{
+    width: 225px;
+    height: 300px;
+  }
+  .destination-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}  
+@media only screen and (max-width:555px){
+  .destination-item img{
+    width: 300px;
+    height: 400px;
+  }
+  .destination-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+</style>
+<body>
+     <!-- Activities -->
+     <section id="activities" class="destinations">
+        <h2>Featured Activities</h2>
+        <pre id="Activities"></pre>
+        <div class="destination-grid">
+        <div class="destination-item">
+        <img src="activity-1.jpg">
+        <h3>Rock Climbing</h3>
+        <p>Rock Climbing is a sport dedicated to travelling across rock faces using different equipment and techniques to get up, down or across rocky faces and structures.</p>
+        </div>
+        <div class="destination-item">
+          <img src="activity-2.jpg">
+          <h3>Para Gliding</h3>
+          <p>Among the health benifits of paragliding, you will also help to build a strong core, which helps with balance, posture and stability.</p>
+        </div>
+        <div class="destination-item">
+        <img src="activity-3.jpg">
+        <h3>Swimming</h3>
+        <p>Swimming is a great workout because you need to move your whole body against the resistance of water.</p>
+        </div>
+        <div class="destination-item">
+          <img src="activity-4.jpg">
+          <h3>Wild Life</h3>
+          <p>Wildlife includes a vast diversity of species, from mammals and birds to insects and marine life. Wildlife plays a crucial role in maintaining ecological balance and biodiversity.</p>
+          </div>
+          <div class="destination-item">
+            <img src="activity-5.jpg">
+            <h3>Hot Air Ballon</h3>
+            <p>A hot air balloon is a type of aircraft that uses a large envelope filled with heated air to achieve flight. The heated air inside the balloon is less dense than the cooler air outside.</p>
+          </div>
+          <div class="destination-item">
+          <img src="activity-6.jpg">
+          <h3>Beach Volleyball</h3>
+          <p>Beach volleyball is a team sport played on sand, typically outdoors. It involves two teams of two players each, who aim to score points by hitting a ball over a net.</p>
+          </div>
+      </div>
+      </section>
+      <main>
+        <a href="project.html" target="blank" class="btn">Back to Home</a> 
+      </main>
+</body>
+</html>
